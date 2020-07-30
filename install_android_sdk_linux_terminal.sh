@@ -6,6 +6,9 @@ https://stackoverflow.com/questions/60730615/sdkmanager-warning-could-not-create
 
 https://stackoverflow.com/questions/60440509/android-command-line-tools-sdkmanager-always-shows-warning-could-not-create-se
 
+Access all Android licenses
+yes Y | /opt/android/tools/bin/sdkmanager --licenses
+
 clear
 echo ""
 echo ""
