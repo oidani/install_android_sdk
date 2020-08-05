@@ -21,5 +21,5 @@ COPY 51-android.rules .
 RUN chmod a+r 51-android.rules
 
 WORKDIR /root
-COPY update_android_sdk_linux.sh .
+COPY update-android-sdk_linux.sh .
 RUN echo "alias adb='adb -H host.docker.internal' >> .bash_aliases"
