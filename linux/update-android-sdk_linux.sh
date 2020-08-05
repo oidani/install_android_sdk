@@ -13,4 +13,7 @@ if [ $? == "0" ]; then
     echo -e "\n Update process completed."
 else; then
     echo -e "Update process failed. Please try again later."
+    exit 1
 fi
+
+exit 0
