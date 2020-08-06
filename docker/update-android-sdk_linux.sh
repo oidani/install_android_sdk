@@ -3,7 +3,7 @@
 echo -e "1. Downloading and configuring newest versions of the following packages:"
 echo -e "- Tools\n- Platform-Tools\n- Build-Tools"
 
-yes | sdkmanager tools platform-tools $(sdkmanager --list | grep build-tools | tail -n1 | cut -d" " -f3) 2>&1 /dev/null
+yes | sdkmanager tools platform-tools $(sdkmanager --list | grep build-tools | tail -n1 | cut -d" " -f3) &> /dev/null
 
 if [ $? == "0" ]; then
     echo -e "\n2. Updating simbolic links in /usr/local/bin/"
